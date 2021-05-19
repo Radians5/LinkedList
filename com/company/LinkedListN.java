@@ -89,11 +89,11 @@ public class LinkedListN<T> implements ILinkedList<T> {
 
     @Override
     public <T> T[] toArray(){
-        T[] ARR = (T[]) new Object[size];
+        T[] arr = (T[]) new Object[size];
         for (int z = 0; z<size; z++){
-         ARR[z] = (T) fiend(z).element;
+         arr[z] = (T) fiend(z).element;
         }
-        return ARR;
+        return arr;
     }
 
     @Override
